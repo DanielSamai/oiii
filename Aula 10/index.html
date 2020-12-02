@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>MARVEL</title>
+        <link rel="stylesheet" href="../Aula 10/style.css">
+    </head>
+    <body>
+        <div id="substitution">
+            <p>Marvel's</p>
+            <h1>Avengers <br><br><br><img src="../Aula 10/png-clipart-thor-captain-america-iron-man-and-hulk-thor-iron-man-marvel-comics-marvel-cinematic-universe-comic-book-avangers-comics-avengers.png" width="50%" height="100%"> </h1>
+            <h2>Integrantes(originais): Homem de ferro; Hulk; Capitão América e Thor</h2>
+        </div>
+
+        <script>
+            let div = document.querySelector('#substitution');
+            let minhah2 = document.createElement('p');
+            let texto = document.createTextNode("São um grupo de super-heróis de história em quadrinhos publicados nos Estados Unidos pela editora Marvel Comics. O grupo também aparece em adaptações da Marvel para cinema, desenho animado e jogos eletrônicos.")
+            minhah2.appendChild(texto);
+            div.appendChild(minhah2);
+
+            let choice = parseInt(prompt("Digite... 1 - para acessar conteudo sobre os X-men; 2 - Para acessar conteudo sobre os Avengers;"));
+            if(choice==1){
+                let texth1=document.querySelector("h1")
+                texth1.innerHTML='<h1> X-men <h1> <img src="../Aula 10/X_MEN.jpg" width="50%" height="100%">';
+                let texth2=document.querySelector("h2")
+                texth2.innerHTML='<h2> Integrantes(originais): Volwerine; Tempestade; Ciclope; Jean Grey e Fera <h2>';
+            }
+        
+        </script>
+    </body>
+</html>
